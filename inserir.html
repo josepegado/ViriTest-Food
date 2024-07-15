@@ -1,0 +1,13 @@
+<?php
+$Name = $_POST['Nome'];
+$Email = $_POST['EMAIL'];
+$PhoneNumber = $_POST ['PHONENUMBER'];
+$Message = $_POST['Message'];
+if (!$Name) {
+    echo 'Nome em falta.
+Volte atrás e preencha o nome.'; exit;} 
+echo 'Dados recebidos: <br/>';
+echo 'PhoneNumber: '.$PhoneNumber. '<br/>';
+echo 'Email: '.$Email. '<br/>';
+echo 'Message: '.$Message. '<br/>';
+$conexao = new mysql ('loca')
